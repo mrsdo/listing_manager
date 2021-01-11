@@ -8,6 +8,7 @@ gem 'bcrypt'
 gem 'pry'
 gem 'rake'
 gem 'require_all'
+# Trying this resource: https://github.com/janko/sequel-activerecord_connection
 gem 'sequel-activerecord_connection', "~>1.0"
 gem 'shotgun'
 gem 'sinatra'
