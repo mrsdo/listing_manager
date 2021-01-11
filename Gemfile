@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 
 gem 'activerecord', '~> 5.2.3', require: 'active_record'
 gem 'bcrypt'
+gem 'mysql2'
 gem 'pry'
 gem 'rake'
 gem 'require_all'
