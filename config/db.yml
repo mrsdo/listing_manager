@@ -1,0 +1,7 @@
+# Sequel Database Configuration
+
+development: "mysql2://root@localhost/listing_manager"
+
+test: "mysql2://root@localhost/listing_manager_test"
+production: "mysql2://root@localhost/listing_manager_production"
+
