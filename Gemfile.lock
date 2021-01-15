@@ -135,6 +135,7 @@ DEPENDENCIES
   json
   mysql2
   pry
+  rack
   rack-test
   rake
   require_all

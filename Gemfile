@@ -7,6 +7,7 @@ gem 'json'
 gem 'mysql2'
 gem 'pry'
 gem 'rake'
+gem 'rack'
 gem 'require_all'
 gem 'sequel'
 # https://github.com/janko/sequel-activerecord_connection
