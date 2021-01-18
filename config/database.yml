@@ -16,8 +16,8 @@ development:
   reconnect: false
   database: listings_development
   pool: 5
-  username: root
-  password: palo5non!
+  username: 
+  password: 
 
 
 # Warning: The database defined as "test" will be erased and
@@ -29,8 +29,8 @@ test:
   reconnect: false
   database: listings_test
   pool: 5
-  username: root
-  password: palo5non!
+  username: 
+  password: 
 
 production:
   adapter: mysql2
@@ -38,5 +38,5 @@ production:
   reconnect: false
   database: listings_production
   pool: 5
-  username: root
-  password: palo5non!
+  username: 
+  password: 
