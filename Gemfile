@@ -15,7 +15,6 @@ gem "sequel-activerecord_connection", "~> 1.0"
 gem 'shotgun'
 gem 'sinatra'
 gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
-gem 'materialize-sass'
 
 gem 'sqlite3'
 gem 'thin'
