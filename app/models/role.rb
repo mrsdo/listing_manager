@@ -1,0 +1,3 @@
+class Role < ActiveRecord::Base
+  # Validate if table exists == true, if not...
+end
