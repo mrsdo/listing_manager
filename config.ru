@@ -12,3 +12,4 @@ use AgentsController
 use ListingsController
 use SignupsController
 use UsersController
+use RoleController
