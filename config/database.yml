@@ -16,7 +16,7 @@ development:
   database: listings_development
   pool: 5
   username: root
-  password: Palo5non!
+  password: palo5non!
 
 
 # Warning: The database defined as "test" will be erased and
@@ -29,7 +29,7 @@ test:
   database: listings_test
   pool: 5
   username: root
-  password: Palo5non!
+  password: palo5non!
 
 production:
   adapter: mysql2
@@ -37,4 +37,6 @@ production:
   database: listings_production
   pool: 5
   username: root
-  password: Palo5non!
+  password: palo5non!
+
+
