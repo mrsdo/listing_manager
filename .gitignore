@@ -3,3 +3,6 @@ db/imports/0005_create_logs_table.rb
 .idea/sinatra-cms-app.iml
 .idea/sinatra-cms-app.iml
 .idea/sinatra-cms-app.iml
+config/database.yml
+.idea/sinatra-cms-app.iml
+*.yml

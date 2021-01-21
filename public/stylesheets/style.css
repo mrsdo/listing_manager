@@ -198,7 +198,7 @@ ul li:hover a {
     float: right;
     font-weight: lighter;
     line-height: 23px;
-	margin: 0px;
+    margin: 0px;
 }
 
 /* More info */
@@ -241,11 +241,11 @@ footer .footer_column p {
     margin-right: 20px;
 }
 
-.button {
+div.button, input.button{
     width: 200px;
-	margin: 40px auto auto;
-	padding: 20px 10px;
-	text-align: center;
+    margin: 40px auto auto;
+    padding: 20px 10px;
+    text-align: center;
     vertical-align: middle;
     border-radius: 0px;
     text-transform: uppercase;
@@ -256,12 +256,20 @@ footer .footer_column p {
     transition: all 0.3s linear;
 }
 
-.button:hover {
+div.button:hover, input.button:hover{
     background-color: #FEFEFE;
     color: #C4C4C4;
     cursor: pointer;
 }
+div.button a, div.button a:active, div.button a:visited {
+    color:#FFFFFF;
+    text-decoration: none;
 
+}
+div.button a:hover {
+    text-decoration: none;
+    color:#818181;
+}
 .copyright {
     text-align: center;
     padding-top: 20px;
@@ -303,8 +311,8 @@ footer {
     }
 
     .container header nav {
-		margin: 0px;
-		width: 100%;
+        margin: 0px;
+        width: 100%;
         float: none;
         display: none;
     }
@@ -313,8 +321,8 @@ footer {
     }
 
     nav ul li {
-		margin: 0px;
-		width: 100%;
+        margin: 0px;
+        width: 100%;
         text-align: center;
     }
 
@@ -338,17 +346,17 @@ footer {
 
     .parallax {
         text-align: center;
-		margin: 0px;
-		padding: 40% 0px 0px;
-		width: 100%;
+        margin: 0px;
+        padding: 40% 0px 0px;
+        width: 100%;
         font-size: 18px;
     }
 
     .parallax_description {
-		padding: 0px;
-		width: 90%;
-		margin: 25px 0px 0px 12px;
-		float: none;
+        padding: 0px;
+        width: 90%;
+        margin: 25px 0px 0px 12px;
+        float: none;
         text-align: center;
     }
 
@@ -443,9 +451,9 @@ footer {
     }
 
     .parallax_description {
-		padding: 0px;
-		margin: 30% 0px 0px;
-		float: none;
+        padding: 0px;
+        margin: 30% 0px 0px;
+        float: none;
         width: 100%;
         text-align: center;
     }
@@ -466,8 +474,8 @@ footer {
     }
 
     .parallax_description {
-		margin: 0px;
-		width: 100%;
+        margin: 0px;
+        width: 100%;
         padding-top: 30px;
     }
 
@@ -493,9 +501,9 @@ footer {
 
     .text_column {
         width: 100%;
-		margin: 0px;
-		padding: 0px;
-	}
+        margin: 0px;
+        padding: 0px;
+    }
 
     .banner {
         margin-top: 0;
@@ -503,6 +511,10 @@ footer {
     }
 }
 /* Tables */
+table, th, td {
+    border: none;
+}
+
 table {
     width: 100%;
     display: table;
@@ -545,6 +557,161 @@ td, th {
     text-align: left;
     vertical-align: middle;
     border-radius: 2px;
+
+@media only screen and (max-width: 992px) {
+    table.responsive-table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        display: block;
+        position: relative;
+        /* sort out borders */
+    }
+    table.responsive-table td:empty:before {
+        content: '\00a0';
+    }
+    table.responsive-table th,
+    table.responsive-table td {
+        margin: 0;
+        vertical-align: top;
+    }
+    table.responsive-table th {
+        text-align: left;
+    }
+    table.responsive-table thead {
+        display: block;
+        float: left;
+    }
+    table.responsive-table thead tr {
+        display: block;
+        padding: 0 10px 0 0;
+    }
+    table.responsive-table thead tr th::before {
+        content: "\00a0";
+    }
+    table.responsive-table tbody {
+        display: block;
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    table.responsive-table tbody tr {
+        display: inline-block;
+        vertical-align: top;
+    }
+    table.responsive-table th {
+        display: block;
+        text-align: right;
+    }
+    table.responsive-table td {
+        display: block;
+        min-height: 1.25em;
+        text-align: left;
+    }
+    table.responsive-table tr {
+        border-bottom: none;
+        padding: 0 10px;
+    }
+    table.responsive-table thead {
+        border: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.12);
+    }
+}
+
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+/* Grid
+-------------------------------------- */
+/* Define the default grid (it's all in one column) */
+.form {
+    display: grid;
+    grid-row-gap: 5px;
+}
+
+/* Switch to two columns in wider viewports */
+@media (min-width: 29.375rem) {
+    .form {
+        grid-column-gap: 25px;
+        grid-template-areas:
+      "label-name  label-email"
+      "field-name  field-email"
+      "label-msg   ."
+      "field-msg   field-msg"
+      "button      .";
+    }
+}
+
+/* The values below correspond to the values shown in grid-template-areas above, placing the items on the grid accordingly. Note that the grid-area value does NOT have to match the class name. For example, .field-message has field-msg as its grid-area. */
+@media (min-width: 29.375rem) {
+    .label-name {
+        grid-area: label-name;
+    }
+    .label-email {
+        grid-area: label-email;
+    }
+    .label-message {
+        grid-area: label-msg;
+    }
+    .field-name {
+        grid-area: field-name;
+    }
+    .field-email {
+        grid-area: field-email;
+    }
+    .field-message {
+        grid-area: field-msg;
+    }
+    .button {
+        grid-area: button;
+    }
+}
+
+/* Generic styles
+-------------------------------------- */
+.form {
+    background-color: #eee;
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 600px;
+    padding: 25px;
+}
+
+.field {
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+@media (max-width: 29.3125rem) {
+    .label-email {
+        margin-top: 20px;
+    }
+}
+
+.label-message {
+    margin-top: 20px;
+}
+
+input.button {
+    appearance: none;
+    background-color: #d85751;
+    border: none;
+    font-size: .9375rem;
+    margin-top: 20px;
+    padding: 10px;
+    /* without this, the button would be as
+    wide as its column (and the Name field) */
+    justify-self: start;
+}
+
+=======
 }
 
 @media only screen and (max-width: 992px) {
@@ -607,3 +774,4 @@ td, th {
         border-right: 1px solid rgba(0, 0, 0, 0.12);
     }
 }
+

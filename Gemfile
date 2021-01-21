@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby '2.6.1'
+# ruby '2.6.1'
 gem 'activerecord', '~> 5.2', :require => 'active_record'
 gem 'bcrypt', '~> 3.1.1'
 gem 'json'
