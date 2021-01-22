@@ -1,24 +1,15 @@
-<h1>View All Roles</h1>
+<h2>About Roles</h2>
+<section id="page">
+  <div id="home-section">
+    Roles determine whether or not a user has permission to view or edit data on the site.
+  </div>
+  <nav>
+    <ol>
+      <li><a href="roles/">Roles Home</a></li>
+      <li><a href="roles/show">View</a></li>
+      <li><a href="roles/new">New</a></li>
+      <li><a href="roles/edit">Edit</a></li>
 
-  <table class="table-striped">
-    <thead>
-    <tr>
-      <th>ID. </th>
-      <th>Role Name</th>
-      <th>Created At</th>
-      <th>Updated</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    <% @role.each do |role| %>
-      <tr>
-        <td><%= role.id.to_s %></td>
-        <td><%= role.role_name %></td>
-        <td><%= role.created_at.to_s %></td>
-        <td><%= role.updated_at.to_s %></td>
-      </tr>
-    <% end %>
-    </tbody>
-  </table>
-<a href="/roles/new">Add New Role</a>
+    </ol>
+  </nav>
+</section>

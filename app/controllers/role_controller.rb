@@ -1,31 +1,20 @@
 
 # Role Controller accessible by admin only
-class RoleController < ApplicationController
 
-  # GET: ‘/roles’
+class RoleController < ApplicationController
   get "/roles" do
-    @role = Role.all
     erb :"/roles/index.html"
   end
 
-  # GET: 'roles/new' do
+
+  # GET: /roles/show List all the records
+  get "/roles/show" do
+    @role = Role.all
+    erb :'/roles/show.html'
+  end
+
   get "/roles/new" do
-    erb :'/roles/new.html'
+    @role = Role.all
+    erb :'/roles/show.html'
   end
-
-  # POST: '/roles/new' do
-
-
-
-
-
-  # PRIVATE
-  private
-
-  def self.connect
-
-
-  end
-
-
 end
