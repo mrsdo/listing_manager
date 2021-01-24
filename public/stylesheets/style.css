@@ -58,7 +58,21 @@ nav ul li {
     font-weight: bold;
     transition: all 0.3s linear;
 }
+#page nav ol li{
+    float: left;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: left;
+    margin-right: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: all 0.3s linear;
 
+}
+#page nav a:link, #page nav a:active, #page nav a:visited{
+    color: #D85751;
+    text-decoration: none;
+}
 ul li a {
     color: #FFFFFF;
     text-decoration: none;
