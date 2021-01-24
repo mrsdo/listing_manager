@@ -649,7 +649,20 @@ td, th {
     display: grid;
     grid-row-gap: 5px;
 }
-
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
 /* Switch to two columns in wider viewports */
 @media (min-width: 29.375rem) {
     .form {

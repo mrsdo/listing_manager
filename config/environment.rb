@@ -2,11 +2,18 @@ ENV['SINATRA_ENV'] ||= "development"
 
 require 'mysql2'
 require 'sinatra'
-# require "active_record/connection_adapters/abstract_mysql_adapter"
-# require "active_record/connection_adapters/mysql/database_statements"
 
 require 'bundler/setup'
 Bundler.require(:default, ENV['SINATRA_ENV'])
+
+def fi_check_migration
+  ActiveRecord::Migration.check_pending!
+rescue ActiveRecord::PendingMigrationError
+  raise ActiveRecord::PendingMigrationError, <<~EX_MSG
+    Migrations are pending. To resolve this issue, run:
+          rake db:migrate SINATRA_ENV=test
+  EX_MSG
+end
 
 require './app/controllers/application_controller'
 require_all 'app'
