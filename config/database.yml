@@ -15,7 +15,9 @@ test:
   <<: *default
   database: listings_test
 
+
 production:
+
   <<: *default
   host: ec2-54-156-73-147.compute-1.amazonaws.com
   database: d506f33f960bp1
@@ -65,3 +67,11 @@ production:
 #  password: palo5non!
 #
 #
+=======
+  adapter: mysql2
+  encoding: utf8
+  database: listings_production
+  pool: 5
+
+  username: 
+  password: 
