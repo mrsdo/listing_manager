@@ -121,7 +121,7 @@ GEM
     yaml (0.1.1)
 
 PLATFORMS
-  x86_64-darwin-20
+  ruby
 
 DEPENDENCIES
   activerecord (~> 5.2.3)
@@ -144,6 +144,9 @@ DEPENDENCIES
   thin
   tux
   yaml
+
+RUBY VERSION
+   ruby 2.6.1p33
 
 BUNDLED WITH
    2.2.5
