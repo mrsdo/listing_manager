@@ -13,7 +13,7 @@
     <orderEntry type="jdk" jdkName="RVM: ruby-2.6.1" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v5.2.4.4, RVM: ruby-2.6.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activerecord (v6.1.1, RVM: ruby-2.6.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activerecord (v5.2.4.4, RVM: ruby-2.6.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v5.2.4.4, RVM: ruby-2.6.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.7.0, RVM: ruby-2.6.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="after_commit_everywhere (v0.1.5, RVM: ruby-2.6.1) [gem]" level="application" />
@@ -55,8 +55,6 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.10.1, RVM: ruby-2.6.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.10.1, RVM: ruby-2.6.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby2_keywords (v0.0.4, RVM: ruby-2.6.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sequel (v5.40.0, RVM: ruby-2.6.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sequel-activerecord_connection (v1.2.2, RVM: ruby-2.6.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="shotgun (v0.9.2, RVM: ruby-2.6.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra (v2.1.0, RVM: ruby-2.6.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra-activerecord (v2.0.22, RVM: ruby-2.6.1) [gem]" level="application" />
