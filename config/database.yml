@@ -15,8 +15,9 @@ development:
   encoding: utf8
   database: listings_development
   pool: 5
-  username: 
-  password: 
+  port: 8889
+  username: root
+  password: Palo5non!
  
 
 
@@ -30,9 +31,9 @@ test:
   encoding: utf8
   database: listings_test
   pool: 5
-
-  username: 
-  password: 
+  port: 8889
+  username: root
+  password: Palo5non!
 
 
 production:
@@ -40,7 +41,7 @@ production:
   encoding: utf8
   database: listings_production
   pool: 5
-
-  username: 
-  password: 
+  port: 8889
+  username: root
+  password: Palo5non!
 
